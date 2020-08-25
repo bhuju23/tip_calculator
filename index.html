@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <div class="main-content">
+                <div class="form">
+                    <form action="" class="main-form">
+                        <div class="main">
+                            <h2>Tip Calculator</h2>
+                            <label for="bill-amount"><h3>Bill Amount</h3></label>
+                            <input type="text" id="bill-amount" placeholder="Enter Bill Amount">
+                            <label for="tip"><h3>Tip %</h3></label>
+                            <div class="tip">
+                                <button id="tip-minus">-</button>
+                                <input type="text" id="tip-percent" value="15">
+                                <button id="tip-plus">+</button>
+                            </div>
+                            <label for="people"><h3>Split Between</h3></label>
+                            <div class="people">
+                                <button id="people-minus">-</button>
+                                <input type="text" id="num-people" value="1"> 
+                                <button id="people-plus">+</button>
+                            </div>
+                            <button type="submit" id="calculate">Calculate</button>
+                            <button type="reset">clear</button>
+                        </div>    
+                        <div class="display">
+                            <label for="tip-amount"><h3>Tip Amount</h3></label>
+                            <input type="text" id="tip-amount" readonly placeholder="Your tip amount is">
+                            <label for="total"><h3>Total</h3></label>
+                            <input type="text" id="total" readonly placeholder="You have to pay">
+                        </div>        
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
